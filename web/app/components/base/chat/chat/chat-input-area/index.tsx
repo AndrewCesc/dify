@@ -55,6 +55,8 @@ const ChatInputArea = ({
   isResponding,
 }: ChatInputAreaProps) => {
   const { t } = useTranslation()
+  const params = new URLSearchParams(window.location.search)
+  const language = params.get('language') || 'en-US' // Default to 'en-US' if no language parameter is provided
   const { notify } = useToastContext()
   const {
     wrapperRef,
@@ -175,7 +177,7 @@ const ChatInputArea = ({
                 className={cn(
                   'p-1 w-full leading-6 body-lg-regular text-text-tertiary outline-none',
                 )}
-                placeholder={t('common.chat.inputPlaceholder') || ''}
+                placeholder={t('common.chat.inputPlaceholder', { lng: language }) || ''}
                 autoFocus
                 autoSize={{ minRows: 1 }}
                 onResize={handleTextareaResize}

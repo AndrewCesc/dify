@@ -16,6 +16,7 @@ const translation = {
     publicPromptConfigTitle: '對話前提示詞',
     configStatusDes: '開始前，您可以修改對話設定',
     configDisabled: '此次會話已使用上次會話表單',
+    description: '您的虛擬旅行伴侶',
     startChat: '開始對話',
     privacyPolicyLeft: '請閱讀由該應用開發者提供的',
     privacyPolicyMiddle: '隱私政策',

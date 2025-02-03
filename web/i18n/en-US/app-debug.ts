@@ -440,6 +440,7 @@ const translation = {
     add: 'Add',
     writeOpener: 'Edit opener',
     placeholder: 'Write your opener message here, you can use variables, try type {{variable}}.',
+    description: 'Hi, I’m your personal tour guide in Rome! Ask me what you’re looking for, and I’ll be happy to help.',
     openingQuestion: 'Opening Questions',
     noDataPlaceHolder:
       'Starting the conversation with the user can help AI establish a closer connection with them in conversational applications.',

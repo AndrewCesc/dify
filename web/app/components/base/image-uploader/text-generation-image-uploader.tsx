@@ -28,6 +28,7 @@ const PasteImageLinkButton: FC<PasteImageLinkButtonProps> = ({
   disabled,
 }) => {
   const { t } = useTranslation()
+
   const [open, setOpen] = useState(false)
 
   const handleUpload = (imageFile: ImageFile) => {
@@ -75,6 +76,8 @@ const TextGenerationImageUploader: FC<TextGenerationImageUploaderProps> = ({
   onFilesChange,
 }) => {
   const { t } = useTranslation()
+  const params = new URLSearchParams(window.location.search)
+  const language = params.get('language') || 'en-US' // Default to 'en-US' if no language parameter is provided
 
   const {
     files,
@@ -103,7 +106,7 @@ const TextGenerationImageUploader: FC<TextGenerationImageUploaderProps> = ({
             ${hovering && 'bg-gray-200'}
           `}>
             <ImagePlus className='mr-2 w-4 h-4' />
-            {t('common.imageUploader.uploadFromComputer')}
+            {t('common.imageUploader.uploadFromComputer', { lng: language })}
           </div>
         )
       }

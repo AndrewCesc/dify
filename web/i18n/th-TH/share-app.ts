@@ -16,6 +16,7 @@ const translation = {
     publicPromptConfigTitle: 'พรอมต์เริ่มต้น',
     configStatusDes: 'ก่อนเริ่ม คุณสามารถแก้ไขการตั้งค่าการสนทนาได้',
     configDisabled: 'มีการใช้การตั้งค่าเซสชันก่อนหน้านี้สําหรับเซสชันนี้',
+    description: 'เพื่อนร่วมเดินทางเสมือนของคุณ',
     startChat: 'เริ่มแชท',
     privacyPolicyLeft: 'โปรดอ่าน',
     privacyPolicyMiddle: 'นโยบายความเป็นส่วนตัว',

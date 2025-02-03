@@ -62,7 +62,7 @@ const ConfigPanel = () => {
                 {
                   appData?.site.description && (
                     <div className='mt-2 w-full text-sm text-gray-500'>
-                      {t('share.chat.description', { lng: language })}
+                      {appData?.site.description}
                     </div>
                   )
                 }

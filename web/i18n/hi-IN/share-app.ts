@@ -2,7 +2,6 @@ const translation = {
   common: {
     welcome: 'आपका स्वागत है',
     appUnavailable: 'ऐप उपलब्ध नहीं है',
-    appUnknownError: 'अज्ञात त्रुटि, कृपया पुनः प्रयास करें',
     appUnknownError: 'ऐप अनुपलब्ध है',
   },
   chat: {
@@ -18,6 +17,7 @@ const translation = {
     configStatusDes: 'शुरू करने से पहले, आप संवाद सेटिंग्स को बदल सकते हैं',
     configDisabled:
       'इस सत्र के लिए पिछले सत्र की सेटिंग्स का उपयोग किया गया है।',
+    description: 'आपका वर्चुअल यात्रा साथी',
     startChat: 'चैट शुरू करें',
     privacyPolicyLeft: 'कृपया पढ़ें ',
     privacyPolicyMiddle: 'गोपनीयता नीति',

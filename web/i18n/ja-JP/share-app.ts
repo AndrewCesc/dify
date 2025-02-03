@@ -17,6 +17,7 @@ const translation = {
     configStatusDes: '開始前に、会話の設定を変更できます',
     configDisabled:
       '前回のセッションの設定がこのセッションで使用されました。',
+    description: 'あなたのバーチャル旅行仲間',
     startChat: 'チャットを開始',
     privacyPolicyLeft:
       'アプリ開発者が提供する',

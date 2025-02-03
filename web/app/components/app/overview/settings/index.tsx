@@ -318,7 +318,7 @@ const SettingsModal: FC<ISettingsModalProps> = ({
               <div className={cn('py-1 text-text-secondary system-sm-semibold')}>{t(`${prefixSettings}.workflow.subTitle`)}</div>
               <Switch
                 disabled={!(appInfo.mode === 'workflow' || appInfo.mode === 'advanced-chat')}
-                defaultValue={inputInfo.show_workflow_steps}
+                defaultValue={false}// {inputInfo.show_workflow_steps}
                 onChange={v => setInputInfo({ ...inputInfo, show_workflow_steps: v })}
               />
             </div>

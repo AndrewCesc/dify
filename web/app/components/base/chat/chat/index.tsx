@@ -108,6 +108,8 @@ const Chat: FC<ChatProps> = ({
   noSpacing,
 }) => {
   const { t } = useTranslation()
+  const params = new URLSearchParams(window.location.search)
+  const language = params.get('language') || 'en-US' // Default to 'en-US' if no language parameter is provided
   const { currentLogItem, setCurrentLogItem, showPromptLogModal, setShowPromptLogModal, showAgentLogModal, setShowAgentLogModal } = useAppStore(useShallow(state => ({
     currentLogItem: state.currentLogItem,
     setCurrentLogItem: state.setCurrentLogItem,
@@ -254,7 +256,9 @@ const Chat: FC<ChatProps> = ({
           className={`absolute bottom-0 ${(hasTryToAsk || !noChatInput || !noStopResponding) && chatFooterClassName}`}
           ref={chatFooterRef}
           style={{
-            background: 'linear-gradient(0deg, #F9FAFB 40%, rgba(255, 255, 255, 0.00) 100%)',
+            background: 'linear-gradient(0deg, #F9FAFB 92%, rgba(255, 255, 255, 0) 100%)', // 'linear-gradient(0deg, #F9FAFB 40%, rgba(255, 255, 255, 0.00) 100%)',
+            paddingTop: '10px',
+            backgroundClip: 'padding-box',
           }}
         >
           <div
@@ -266,7 +270,7 @@ const Chat: FC<ChatProps> = ({
                 <div className='flex justify-center mb-2'>
                   <Button onClick={onStopResponding}>
                     <StopCircle className='mr-[5px] w-3.5 h-3.5 text-gray-500' />
-                    <span className='text-xs text-gray-500 font-normal'>{t('appDebug.operation.stopResponding')}</span>
+                    <span className='text-xs text-gray-500 font-normal'>{t('appDebug.operation.stopResponding', { lng: language })}</span>
                   </Button>
                 </div>
               )

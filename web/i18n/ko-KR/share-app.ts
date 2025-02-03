@@ -16,6 +16,7 @@ const translation = {
     publicPromptConfigTitle: '초기 프롬프트',
     configStatusDes: '시작하기 전에 채팅 설정을 변경할 수 있습니다',
     configDisabled: '이전 세션의 설정이 현재 세션에서 사용되었습니다.',
+    description: '당신의 가상 여행 동반자',
     startChat: '채팅 시작',
     privacyPolicyLeft: '앱 개발자가 제공하는',
     privacyPolicyMiddle: '개인 정보 보호 정책',

@@ -431,6 +431,7 @@ const translation = {
     add: '追加',
     writeOpener: 'オープナーを書く',
     placeholder: 'ここにオープナーメッセージを書いてください。変数を使用できます。{{variable}} を入力してみてください。',
+    description: 'こんにちは、私はローマであなたの個人的な観光ガイドです！お探しのものを聞いてください、喜んでお手伝いします.',
     openingQuestion: '開始質問',
     noDataPlaceHolder:
       'ユーザーとの会話を開始すると、会話アプリケーションで彼らとのより密接な関係を築くのに役立ちます。',

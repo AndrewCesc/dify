@@ -18,6 +18,7 @@ const translation = {
       'Prima di iniziare, puoi modificare le impostazioni della conversazione',
     configDisabled:
       'Le impostazioni della sessione precedente sono state utilizzate per questa sessione.',
+    description: 'Il tuo compagno di viaggio virtuale',
     startChat: 'Inizia Chat',
     privacyPolicyLeft: 'Per favore leggi la ',
     privacyPolicyMiddle: 'politica sulla privacy',

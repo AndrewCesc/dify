@@ -327,6 +327,7 @@ const translation = {
     add: 'Agregar',
     writeOpener: 'Escribir apertura',
     placeholder: 'Escribe tu mensaje de apertura aquí, puedes usar variables, intenta escribir {{variable}}.',
+    description: '¡Hola, soy tu guía turística personal en Roma! Pregúntame qué estás buscando y estaré encantado de ayudarte.',
     openingQuestion: 'Preguntas de Apertura',
     noDataPlaceHolder: 'Iniciar la conversación con el usuario puede ayudar a la IA a establecer una conexión más cercana con ellos en aplicaciones de conversación.',
     varTip: 'Puedes usar variables, intenta escribir {{variable}}',

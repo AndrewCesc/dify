@@ -363,6 +363,7 @@ const translation = {
     writeOpener: 'Scrivi introduzione',
     placeholder:
       'Scrivi qui il tuo messaggio introduttivo, puoi usare variabili, prova a scrivere {{variable}}.',
+    description: 'Ciao, sono la tua guida turistica personale a Roma! Chiedimi cosa stai cercando e sarò felice di aiutarti.',
     openingQuestion: 'Domande iniziali',
     noDataPlaceHolder:
       'Iniziare la conversazione con l\'utente può aiutare l\'IA a stabilire un legame più stretto con loro nelle applicazioni conversazionali.',

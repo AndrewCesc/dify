@@ -326,6 +326,7 @@ const translation = {
     add: '추가',
     writeOpener: '오프너 작성',
     placeholder: '여기에 오프너 메시지를 작성하세요. 변수를 사용할 수 있습니다. {{variable}}를 입력해보세요.',
+    description: '안녕하세요, 저는 로마에서 당신의 개인 관광 가이드입니다! 찾고 있는 것을 물어보세요, 기쁘게 도와드리겠습니다.',
     openingQuestion: '시작 질문',
     noDataPlaceHolder: '사용자와의 대화를 시작하면 대화 애플리케이션에서 그들과 더 밀접한 관계를 구축하는 데 도움이 됩니다.',
     varTip: '변수를 사용할 수 있습니다. {{variable}}를 입력해보세요.',

@@ -16,6 +16,7 @@ const translation = {
     publicPromptConfigTitle: 'Початкова підказка',
     configStatusDes: 'Перед початком ви можете змінити налаштування розмови',
     configDisabled: 'Для цього сеансу було використано налаштування попереднього сеансу.',
+    description: 'Ваш віртуальний супутник подорожей',
     startChat: 'Почати чат',
     privacyPolicyLeft: 'Будь ласка, ознайомтеся з ',
     privacyPolicyMiddle: 'політикою конфіденційності',

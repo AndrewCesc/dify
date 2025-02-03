@@ -14,6 +14,8 @@ const TryToAsk: FC<TryToAskProps> = ({
   onSend,
 }) => {
   const { t } = useTranslation()
+  const params = new URLSearchParams(window.location.search)
+  const language = params.get('language') || 'en-US' // Default to 'en-US' if no language parameter is provided
 
   return (
     <div>
@@ -26,7 +28,7 @@ const TryToAsk: FC<TryToAskProps> = ({
         />
         <div className='shrink-0 flex items-center px-3 text-gray-500'>
           <Star04 className='mr-1 w-2.5 h-2.5' />
-          <span className='text-xs text-gray-500 font-medium'>{t('appDebug.feature.suggestedQuestionsAfterAnswer.tryToAsk')}</span>
+          <span className='text-xs text-gray-500 font-medium'>{t('appDebug.feature.suggestedQuestionsAfterAnswer.tryToAsk', { lng: language })}</span>
         </div>
         <div
           className='grow h-[1px]'
@@ -37,7 +39,7 @@ const TryToAsk: FC<TryToAskProps> = ({
       </div>
       <div className='flex flex-wrap justify-center'>
         {
-          suggestedQuestions.map((suggestQuestion, index) => (
+          suggestedQuestions.slice(0, 2).map((suggestQuestion, index) => (
             <Button
               key={index}
               variant='secondary-accent'

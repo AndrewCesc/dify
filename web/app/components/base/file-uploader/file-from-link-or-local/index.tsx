@@ -30,6 +30,9 @@ const FileFromLinkOrLocal = ({
   fileConfig,
 }: FileFromLinkOrLocalProps) => {
   const { t } = useTranslation()
+  const params = new URLSearchParams(window.location.search)
+  const language = params.get('language') || 'en-US' // Default to 'en-US' if no language parameter is provided
+
   const files = useStore(s => s.files)
   const [open, setOpen] = useState(false)
   const [url, setUrl] = useState('')
@@ -115,7 +118,7 @@ const FileFromLinkOrLocal = ({
                 disabled={disabled}
               >
                 <RiUploadCloud2Line className='mr-1 w-4 h-4' />
-                {t('common.fileUploader.uploadFromComputer')}
+                {t('common.fileUploader.uploadFromComputer', { lng: language })}
                 <FileInput fileConfig={fileConfig} />
               </Button>
             )

@@ -16,6 +16,7 @@ const translation = {
     publicPromptConfigTitle: 'Lời nhắc ban đầu',
     configStatusDes: 'Trước khi bắt đầu, bạn có thể chỉnh sửa cài đặt cuộc trò chuyện',
     configDisabled: 'Cài đặt của phiên trước đã được sử dụng cho phiên này.',
+    description: 'Bạn đồng hành du lịch ảo của bạn',
     startChat: 'Bắt đầu trò chuyện',
     privacyPolicyLeft: 'Vui lòng đọc ',
     privacyPolicyMiddle: 'chính sách bảo mật',

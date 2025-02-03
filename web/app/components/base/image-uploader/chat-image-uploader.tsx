@@ -53,6 +53,9 @@ const UploaderButton: FC<UploaderButtonProps> = ({
   limit,
 }) => {
   const { t } = useTranslation()
+  const params = new URLSearchParams(window.location.search)
+  const language = params.get('language') || 'en-US' // Default to 'en-US' if no language parameter is provided
+
   const [open, setOpen] = useState(false)
 
   const hasUploadFromLocal = methods.find(
@@ -110,7 +113,7 @@ const UploaderButton: FC<UploaderButtonProps> = ({
                     )}
                   >
                     <Upload03 className="mr-1 w-4 h-4" />
-                    {t('common.imageUploader.uploadFromComputer')}
+                    {t('common.imageUploader.uploadFromComputer', { lng: language })}
                   </div>
                 )}
               </Uploader>

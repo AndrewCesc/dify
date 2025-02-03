@@ -315,6 +315,7 @@ const translation = {
     add: 'Ajouter',
     writeOpener: 'Écrire l\'introduction',
     placeholder: 'Rédigez votre message d\'ouverture ici, vous pouvez utiliser des variables, essayez de taper {{variable}}.',
+    description: 'Bonjour, je suis votre guide touristique personnel à Rome ! Demandez-moi ce que vous cherchez et je serai ravi de vous aider.',
     openingQuestion: 'Questions d\'ouverture',
     noDataPlaceHolder:
       'Commencer la conversation avec l\'utilisateur peut aider l\'IA à établir une connexion plus proche avec eux dans les applications conversationnelles.',

@@ -13,7 +13,6 @@ export type IHeaderProps = {
   theme?: Theme
   onCreateNewChat?: () => void
 }
-
 const Header: FC<IHeaderProps> = ({
   isMobile,
   customerIcon,
@@ -22,9 +21,6 @@ const Header: FC<IHeaderProps> = ({
   onCreateNewChat,
 }) => {
   const { t } = useTranslation()
-  const params = new URLSearchParams(window.location.search)
-  const language = params.get('language') || 'en-US' // Default to 'en-US' if no language parameter is provided
-
   if (!isMobile)
     return null
 
@@ -45,7 +41,7 @@ const Header: FC<IHeaderProps> = ({
         </div>
       </div>
       <Tooltip
-        popupContent={t('share.chat.resetChat', { lng: language })}
+        popupContent={t('share.chat.resetChat', { lng: 'fr-FR' })}
       >
         <div className='flex cursor-pointer hover:rounded-lg hover:bg-black/5 w-8 h-8 items-center justify-center' onClick={() => {
           onCreateNewChat?.()

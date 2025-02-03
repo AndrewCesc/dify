@@ -16,6 +16,7 @@ const translation = {
     publicPromptConfigTitle: 'Başlangıç Promptu',
     configStatusDes: 'Başlamadan önce, konuşma ayarlarını değiştirebilirsiniz',
     configDisabled: 'Bu oturum için önceki oturum ayarları kullanılmıştır.',
+    description: 'Sanal seyahat arkadaşınız',
     startChat: 'Sohbete Başla',
     privacyPolicyLeft: 'Lütfen okuyun',
     privacyPolicyMiddle: 'gizlilik politikası',

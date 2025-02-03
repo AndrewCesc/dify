@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useMemo } from 'react'
-import { useTranslation } from 'react-i18next'
 import Chat from '../chat'
 import type {
   ChatConfig,
@@ -38,10 +37,6 @@ const ChatWrapper = () => {
     currentChatInstanceRef,
     themeBuilder,
   } = useEmbeddedChatbotContext()
-  const { t } = useTranslation()
-  const params = new URLSearchParams(window.location.search)
-  const language = params.get('language') || 'en-US' // Default to 'en-US' if no language parameter is provided
-
   const appConfig = useMemo(() => {
     const config = appParams || {}
 
@@ -52,7 +47,7 @@ const ChatWrapper = () => {
         fileUploadConfig: (config as any).system_parameters,
       },
       supportFeedback: true,
-      opening_statement: t('appDebug.openingStatement.description', { lng: language }),
+      opening_statement: currentConversationId ? currentConversationItem?.introduction : (config as any).opening_statement,
     } as ChatConfig
   }, [appParams, currentConversationItem?.introduction, currentConversationId])
   const {

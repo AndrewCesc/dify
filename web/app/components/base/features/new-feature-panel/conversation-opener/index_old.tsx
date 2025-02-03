@@ -28,8 +28,6 @@ const ConversationOpener = ({
   onAutoAddPromptVariable,
 }: Props) => {
   const { t } = useTranslation()
-  const params = new URLSearchParams(window.location.search)
-  const language = params.get('language') || 'en-US' // Default to 'en-US' if no language parameter is provided
   const { setShowOpeningModal } = useModalContext()
   const opening = useFeatures(s => s.features.opening)
   const featuresStore = useFeaturesStore()
@@ -102,7 +100,7 @@ const ConversationOpener = ({
           <>
             {!isHovering && (
               <div className='min-h-8 text-text-tertiary system-xs-regular line-clamp-2'>
-                {t('appDebug.openingStatement.description', { lng: language }) || t('appDebug.openingStatement.placeholder')}
+                {opening.opening_statement || t('appDebug.openingStatement.placeholder')}
               </div>
             )}
             {isHovering && (

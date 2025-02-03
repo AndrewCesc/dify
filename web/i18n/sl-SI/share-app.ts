@@ -17,6 +17,7 @@ const translation = {
     configStatusDes: 'Pred začetkom lahko spremenite nastavitve konverzacije',
     configDisabled:
       'Nastavitve prejšnje seje so uporabljene za to sejo.',
+    description: 'Vaš virtualni sopotnik na poti',
     startChat: 'Začni klepet',
     privacyPolicyLeft: 'Prosimo, preberite ',
     privacyPolicyMiddle: 'politiko zasebnosti',

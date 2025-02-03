@@ -17,6 +17,7 @@ const translation = {
     configStatusDes: 'Avant de commencer, vous pouvez modifier les paramètres de conversation',
     configDisabled:
       'Les paramètres de la session précédente ont été utilisés pour cette session.',
+    description: 'Votre compagnon de voyage virtuel',
     startChat: 'Commencer le Chat',
     privacyPolicyLeft:
       'Veuillez lire',

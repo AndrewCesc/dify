@@ -16,6 +16,7 @@ const translation = {
     publicPromptConfigTitle: 'پیشنهاد اولیه',
     configStatusDes: 'قبل از شروع، می‌توانید تنظیمات مکالمه را تغییر دهید',
     configDisabled: 'تنظیمات جلسه قبلی برای این جلسه استفاده شده است.',
+    description: 'همراه مجازی سفر شما',
     startChat: 'شروع چت',
     privacyPolicyLeft: 'لطفاً ',
     privacyPolicyMiddle: 'سیاست حریم خصوصی',
